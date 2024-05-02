@@ -1,1 +1,3 @@
 This is a classwork on how to use GIT!
+
+Now I am getting familiar with git commands and I feel smarter!
