@@ -1,0 +1,21 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="log-workout content">
+    <form action="/workouts" method="POST">
+      <label for="title">Municipality Name:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="synopsis">Average Salary:</label>
+      <input type="text" id="synopsis" name="synopsis" required>
+      <label for="body">Details:</label>
+      <textarea id="body" name="body" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

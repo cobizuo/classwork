@@ -1,0 +1,26 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="workouts content">
+    <h2>Municipalities</h2>
+
+    <% if (workouts.length > 0) { %>
+      <% workouts.forEach(workouts => { %>
+        <a class="single" href="/workouts/<%= workouts._id %>">
+          <h3 class="title"><%= workouts.title %></h3>
+          <p class="synopsis"><%= workouts.synopsis %></p>
+        </a>
+
+      <% }) %>
+    <% } else { %>
+      <p>The most current US CENSUS data has not been uploaded...</p>
+    <% } %>
+    
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
